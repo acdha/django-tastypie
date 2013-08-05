@@ -12,6 +12,9 @@ env:
 matrix:
   allow_failures:
     - env: DJANGO_VERSION=dev
+  exclude:
+    - env: DJANGO_VERSION=dev
+      python: "2.6"
 
 # command to install dependencies
 install:
